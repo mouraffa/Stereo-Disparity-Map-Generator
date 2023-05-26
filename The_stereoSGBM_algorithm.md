@@ -7,8 +7,8 @@ The StereoSGBM algorithm involves several mathematical concepts and computations
 For each pixel in the left image (L(x, y)) and its corresponding pixel in the right image (R(x - d, y)) with a specific disparity value (d), the cost (C(d)) can be computed using the sum of squared differences (SSD) or absolute differences (SAD) between the pixel intensities.
 
 The cost computation can be represented as follows:
-- SSD: C(d) = \sum (L(x, y) - R(x - d, y))^2
-- SAD: C(d) = \sum |L(x, y) - R(x - d, y)|
+- SSD: C(d) = ∑ (L(x, y) - R(x - d, y))^2
+- SAD: C(d) = ∑ |L(x, y) - R(x - d, y)|
 
 Here, the summation is performed over a defined neighborhood around the pixel.
 
@@ -41,5 +41,4 @@ Assuming we have two grayscale stereo images, left_image and right_image, of siz
    Sub-pixel interpolation can be performed on the resulting disparity map to estimate sub-pixel disparities, providing more precise depth information.
 
 By following these steps, the StereoSGBM algorithm generates a disparity map that represents the difference in pixel coordinates between corresponding points in the stereo images, providing depth information for the scene.
-
 
