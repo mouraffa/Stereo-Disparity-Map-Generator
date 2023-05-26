@@ -1,6 +1,7 @@
 # Stereo Disparity Map Generator
 
 This code generates a disparity map using the StereoSGBM algorithm. The disparity map represents the difference in pixel coordinates between corresponding points in a pair of stereo images. It provides depth information for each pixel, which can be used for tasks such as 3D reconstruction, object detection, and scene understanding.
+![Alt Text](organigramme.png)
 
 ## Prerequisites
 
